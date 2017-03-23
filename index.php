@@ -1,9 +1,8 @@
 <?php
 
-echo 'Hello Word!';
+/*  Test git */
+echo 'Hello Word! </br>';
 
-echo '</br>';
 
-echo 'Hi! pablo!';
 
 ?>
