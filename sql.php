@@ -7,15 +7,20 @@ function db_conn()
     $host = "localhost"; 
     
     $handle = mysql_connect($host, $user, $pass)  or die("Unable to connect to MySQL");
-        echo "Connected to MySQL<br>";
-
     mysql_select_db("wawa", $handle)  or die("Could not select examples");
 }
+
+
 
 db_conn();
 $result = mysql_query("SELECT * from dom ");
 
    
+//mysql_fetch_row();
+//mysql_fetch_assoc();
+//mysql_num_rows();
+//mysql_num_fields();
+
 while ($row = mysql_fetch_array($result) )
 {
     echo $row['id_dom'];
@@ -23,14 +28,4 @@ while ($row = mysql_fetch_array($result) )
 }
 
 
-mysql_close($dbhandle);
-
-
-
-
-
-
-
-
-
-?>
+    mysql_close();
