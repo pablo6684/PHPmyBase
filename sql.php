@@ -28,4 +28,8 @@ while ($row = mysql_fetch_array($result) )
 }
 
 
+//mysql_query("START TRANSACTION")or die("blad wlaczenia transakcji");
+//mysql_query("ROLLBACK")or die("blad wlaczenia transakcji");
+//mysql_query("COMMIT")or die("blad wlaczenia transakcji");
+
     mysql_close();
